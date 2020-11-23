@@ -46,7 +46,7 @@ class BinarySearchTree(object):
 
 
     def _find_node(self,cur,data):
-        if cur is None:
+        if cur is None: #리프 노드에 도달했는데도 찾는 값이 없을 경우
             return False
         elif data == cur.data:
             return True
